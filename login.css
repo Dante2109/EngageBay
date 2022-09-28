@@ -1,0 +1,109 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+#loginpart{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 55px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    margin-top:30px ;
+}
+button{
+    display: flex;
+    align-items: center;
+    border: 1px solid 
+    #007bff;
+    background-color:
+    #007bff;
+    padding: 0px;
+    margin-top: 10px;
+    border-radius: 4px;
+    height:45px
+}
+
+button>img{
+    width:6%;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+    border-radius:3px 0px 0px 3px;
+}
+button>p{
+    background-color: #007bff;
+    width: 80%;
+    text-align: center;
+    margin-left: 15px ;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+h3{
+    font-weight: 400;
+}
+input{
+    height: 44px;
+    border:1px solid #efedf0;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: 
+    #f2603e;
+    border-radius: 4px;
+    color: white;
+}
+#loginpart>img{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+label{
+    margin-bottom: -5px;
+}
+input::placeholder{
+    color: #e7e2e5;
+    border-color:red;
+    font-weight: 100;
+    font-size: 15px;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #007bff;
+}
+button~p{
+    margin-bottom: -15px;
+    font-size: smaller;
+    margin-top: 20px;
+}
+button+p{
+    margin-top:38px ;
+}
+button~p:nth-last-child(1){
+    margin-bottom: 48px;
+    font-size: 12px;
+}
+body>img{
+    width: 67.477%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
