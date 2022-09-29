@@ -13,7 +13,7 @@ body{
     font-weight: 500;
     margin-top: 100px;
 }
-h2{
+#header h2{
     width: 60%;
     text-align: center;
     font-size: 28px;
@@ -21,7 +21,7 @@ h2{
     font-weight: 300;
     margin-top: 20px;
 }
-h2+input,input+button{
+#header h2+input,#header input+button{
     width: 600px;
     margin: auto;
     height:70px;
@@ -33,10 +33,10 @@ h2+input,input+button{
     font-size: 20px;
 
 }
-h2+input::placeholder{
+#header h2+input::placeholder{
     font-size: 18px;
 }
-input+button{
+#header input+button{
     width:150px;
     height:50px;
     margin-top:-66px;
@@ -46,7 +46,7 @@ input+button{
     margin-bottom: 20px;
     box-shadow: none
 }
-button+div>p>i{
+#header button+div>p>i{
 color: #6639b3;
 }
 #banner{
@@ -56,16 +56,15 @@ color: #6639b3;
 }
 #bl{
     position: absolute;
-    width: 100%;
-    height: 129%;
-    overflow:hidden;
-    min-height: fit-content;
+    height: 100%;
+    bottom: 120px;
     z-index: -100;
+    right:0px;
 }
-input{
+#header input{
 border: 1px solid #ff7342;
 }
-input:focus{
+#header input:focus{
     outline: none;
     border-color:  #ff7342;;
 }
@@ -92,7 +91,210 @@ hr+h1{
     font-size: 38px;
     margin-bottom: 0px;
 }
-h1+h2{
-    color:#a3aabe;
-    font-size:20px;
+#header>h1+h2{
+    color:black;
+    font-size:28px;
+}
+
+/* 
+        SINGLE SOLUTION FOR ALL ACTIVITIES
+*/
+
+#solution{
+    display: grid;
+    width:85%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:40px 30px;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.solution-1{
+    border:2px solid #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.solution-1-upper{
+    display: flex;
+}
+.solution-1-upper-left{
+    padding: 45px;
+}
+.solution-1-upper>div>img{
+    margin-top: 50px;
+    width: 85%;
+}
+.solution-1-lower{
+    margin-top: -60px;
+    padding: 45px;
+}
+.solution-1>hr{
+    margin-top: -20px;
+}
+.solution-1-lower-lower{
+ display: grid;
+ gap:-20px;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: repeat(2,1fr);
+ margin-bottom: 20px;
+}
+.solution-1-lower-lower>p>i{
+    color:#6639b3;
+    font-weight:500;
+    font-size: 15px;
+}
+.solution-1-lower-lower>p{
+    margin-top: -5px;
+}
+.solution-1-lower>a{
+    text-decoration: none;
+}
+.solution-1-lower>a>button{
+    background-color: #6639b3;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.solution-1-lower>a>button:hover{
+    cursor: pointer;
+}
+.heads{
+    font-weight: 500;
+}
+.heads2{
+    margin-bottom: 30px;
+}
+
+/* SINFLE SOLUTION FOR ALL ACTIVITIES CSS COMPLETED */
+
+/* REVIEW SECTION */
+
+#reviews{
+    height:400px;
+    background-color: #3657c2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#reviews>h2{
+    color:white;
+    margin-bottom: -90px;
+    margin-top: 100px;
+    font-weight: 600;
+}
+#reviews>div{
+    display: flex;
+    width:85%;
+    margin: auto;
+
+}
+
+#reviews>div>img{
+    width:7%;
+    margin: auto;
+
+}
+                 
+/*<--             2nd Middle section ended- Customer Reviews                    */
+/*<--             //////////////////////////////////////////                   --> */
+/*<--        3rd Middle section started -Do It All With EngageBay                   --> */
+
+#Doit-grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,200px);
+    gap:20px;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#Doit-grid>div{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fb;
+    justify-content: center;
+    border-radius: 10px;
+    transition:all 0.3s linear;
+    border:1px transparent ;
+}
+#Doit-grid>div:hover{
+    border:1px solid #0e7dfe;
+    transform: scale(1.05);
+}
+#Doit-grid>div>img{
+    width:30%;
+    margin: auto;
+    margin-bottom: -30px
+}
+#Doit-grid>div>h4{
+    width:60%;
+    margin:auto;
+    color: #515c7c;
+}
+
+/* <!--                   3rd Middle section ended - Do It All With EngageBay                   --> */
+/* <!--                   ///////////////////////////////////////////////////                   --> */
+/* <!--                                     Footer section                                      --> */
+
+#footer{
+    height: 600px;
+    background: fixed;
+    background-image:url("https://cdn5.engagebay.com/new/assets/img/footer_bg.jpeg");
+    background-position: fixed;
+    background-size:auto;
+    background-clip:content-box ;
+    margin-top: 50px;
+}
+#footer-1{
+    color:white;
+    width: 80%;
+    display: flex;
+    text-align: left;
+    margin: auto;
+    border: 1px solid;
+    margin-top: 100px;
+}
+
+#GTgrid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin: auto;
+    border: 1px solid;
+
+}
+#GTgrid>input{
+    background-color: rgba(41, 41, 45, 0.2);
+    width: 80%;
+    padding:15px;
+    border: none;
+    color: white; 
+}
+#footer-2{
+    width: 100%;
+}
+form{
+    border: 1px solid;
+    width: 70%;
+}
+#GTgrid>input:focus{
+    color: white;
+}
+#GTgrid>input::placeholder{
+    color: white;
+}
+#footer-1 img{
+    width:30%
 }
