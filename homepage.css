@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    overflow-x: hidden;
 }
 #navbar+h1{
     font-size: 80px;
@@ -19,7 +20,8 @@ body{
     margin: auto;
     font-weight: 300;
     margin-top: 20px;
-    color:#8991ac
+    color:#8991ac;
+    margin-bottom:100px ;
 }
 #header h2+input,#header input+button{
     width: 600px;
@@ -56,10 +58,11 @@ color: #6639b3;
 }
 #bl{
     position: absolute;
-    height: 100%;
     bottom: 120px;
+    height: 85%;
     z-index: -100;
-    right:0px;
+    right:-200px;
+
 }
 #header input{
 border: 1px solid #ff7342;
@@ -381,4 +384,34 @@ table+hr{
 }
 #fl1+div>p:first-child{
     margin-top:3px
+}
+
+.upslider{
+    transform: translateY(300%);
+    transition: transform 500ms ease-in-out;
+    opacity: 0;
+}
+.upslider.appear{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.from-left{
+    transform: translateX(-50%);
+}
+
+.from-right{
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right{
+    transition: transform 700ms ease-in-out;
+    opacity: 0;
+}
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0);
+    opacity: 1;
+    position: relative;
 }
