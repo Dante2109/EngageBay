@@ -1,0 +1,137 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 53px;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#navbar2{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    align-items: center;
+}
+#navbar2>p{
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+#navbar>a>img{
+    width:50%;
+    padding: 20px;
+    margin-left: 0px;
+}
+
+
+#navbar2>p:nth-last-child(1){
+    background-color: #f16334;
+    color: white;
+}
+#navbar2>p:hover,#navbar a:hover{
+    color:rgb(50, 50, 189);
+    cursor: pointer;
+}
+
+#navbar2>p:nth-last-child(1):hover{
+    background-color:#fe5a1e;
+    color: white;
+}
+#navbar2>p:nth-last-child(1)>a:hover{
+    color:white
+}
+#navbar2>p:nth-last-child(1)>a{
+    color:white
+}
+.sticky{
+    background-color: white;    
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar2>p:nth-child(5){
+    border-bottom:3px solid #f16334;
+    border-radius: 0px;
+}
+#navbar2>p:nth-child(5)>a{
+    color:#f4581f ;
+}
+#navbar2>p:nth-child(1){
+    margin-left: -200px;
+}
+
+/* <!--                           Navbar section started                                 -->
+<!--                           //////////////////////                                 -->
+<!--                             Main body section                                 --> */
+
+
+@font-face {
+    font-family: "roboto";
+    src: url(font/Roboto-Regular.ttf);
+}
+
+#main{
+    width: 80%;
+    margin: auto;
+    margin-left: 170px;
+    font-family: "roboto"
+}
+
+#first-banner{
+    background-color: #f1f9ff;
+    height: 320px;
+    margin-top: 70px;
+    display:flex ;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition-duration: 0.7s;
+}
+
+#first-banner:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#first-banner>div{
+    padding: 20px 50px;
+}
+#first-banner>div>button{
+    background-color: #f16334;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#first-banner>div>h1{
+    font-size: 46px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color:#393939
+}
+#first-banner>div>h3{
+    font-size: 23px;
+    font-weight: 400;
+    color: #646566;
+}
+#first-banner>img{
+    border-radius: 10px;
+}
