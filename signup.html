@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="login.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+        crossorigin="anonymous"
+        ></script>
 </head>
 <body>
     <div id="loginpart">
@@ -13,13 +17,14 @@
     <h3>Get Started for FREE</h3>
     <form action="">
         <label for="">Name</label>
-        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Name" id="name">
         <label for="">Username</label>
-        <input type="email" name="" id="" placeholder="Work Email">
+        <input type="email" name="" id="email" placeholder="Work Email">
         <label for="">Website URL</label>
-        <input type="url" placeholder="Website URL">
+        <input type="url" placeholder="Website URL" id="website">
         <label for="">Password</label>
-        <input type="password" name="" id="" placeholder="Password" minlength="8">
+        <input type="password" name="" id="password" placeholder="Password" minlength="8">
+        <i class="far fa-eye" id="togglePassword"></i>
         <input type="submit" value="SIGN UP">
     </form>
     <button>
@@ -33,3 +38,5 @@
 <img style="position:fixed; right:0; min-height:100%" src="Images/signup-2.jpg" alt="">
 </body>
 </html>
+
+<script src="signup.js"></script>
