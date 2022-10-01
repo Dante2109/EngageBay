@@ -229,6 +229,7 @@ hr+h1{
     border-radius: 10px;
     transition:all 0.3s linear;
     border:1px transparent ;
+
 }
 #Doit-grid>div:hover{
     border:1px solid #0e7dfe;
@@ -387,7 +388,7 @@ table+hr{
 }
 
 .upslider{
-    transform: translateY(300%);
+    transform: translateY(50%);
     transition: transform 500ms ease-in-out;
     opacity: 0;
 }
@@ -406,7 +407,7 @@ table+hr{
 
 .from-left,
 .from-right{
-    transition: transform 700ms ease-in-out;
+    transition: transform 1s ease-in-out;
     opacity: 0;
 }
 .from-left.appear,
@@ -414,4 +415,105 @@ table+hr{
     transform: translateX(0);
     opacity: 1;
     position: relative;
+}
+.Upslider{
+    transform: translateY(300%);
+    transition: transform 0.8s ease-in-out;
+    opacity: 0;
+}
+.Upslider.appear{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.dropdown.active > .link,
+.link:hover{ 
+cursor: pointer;
+color:rgb(50, 50, 189);
+}
+.link{
+    padding: 20px;
+}
+
+.dropdown-menu{
+    position: fixed;
+    background-color: white;
+    border: 1px transparent;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    pointer-events: none;
+    left: 0px;
+    display: flex;
+    text-align: left;
+}
+
+.dropdown.active >.link+.dropdown-menu{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.ddiv1{
+    display: flex;
+    padding: 20px;
+    border: 1px solid #b9b9b9;
+}
+.dgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(9,1fr);
+    padding: 20px;
+    gap:0px 10px;
+    margin-top: -20px;
+    font-size: 13px;
+}
+.dgrid1{
+    font-size: 13px;
+    padding: 0px 20px;
+}
+
+.ddiv3{
+    padding: 30px;
+    background-color: #d7d7d7;
+    border-radius: 0px 7px 7px 0px;
+}
+.ddiv3>hr{
+    width: 100%;
+}
+.ddiv3>div{
+    width: 80%;
+    padding:15px;
+    transition-duration: 0.3s;
+}
+.ddiv3>div:hover{
+    background-color: white;
+}
+.ddiv3>hr+div{
+    margin-top: -30px;
+}
+.ddiv3>div>p{
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.ddiv12{
+    border-right:1px solid #b9b9b9; 
+    padding-right: 20px;
+}
+.ddiv12>h5,.ddiv12>h4{
+    padding: 10px;
+    padding-right: 80px;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+.ddiv12>h5:hover,.ddiv12>h4:hover{
+    background-color: #99a8d5;
+}
+
+.free>p:hover{
+  color:rgb(50, 50, 189);
 }
