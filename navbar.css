@@ -18,6 +18,7 @@ a{
     align-items: center;
     transition: 0.5s;
     width: 100%;
+    z-index: 1;
 }
 #navbar2{
     display: flex;

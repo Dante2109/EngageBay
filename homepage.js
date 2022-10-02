@@ -23,7 +23,7 @@ ff.addEventListener("submit",function(event){
 let section1=document.querySelector("#header")
 let header=document.querySelector(".Navbar")
 let section1options={
-    rootMargin:"-200px 0px 0px 0px"
+    rootMargin:"-700px 0px 0px 0px"
 }
 
 let section1observer= new IntersectionObserver(function(entries,section1observer){
