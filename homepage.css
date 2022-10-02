@@ -446,7 +446,6 @@ color:rgb(50, 50, 189);
     transform: translateY(-10%);
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
     pointer-events: none;
-    left: 0px;
     display: flex;
     text-align: left;
 }
