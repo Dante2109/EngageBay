@@ -4,9 +4,18 @@ let form=document.querySelector("form");
 
 form.addEventListener("submit",function(event){
     event.preventDefault();
+    let stat=true
     if(form.password.value=="" || form.website.value=="" || form.email.value=="" || form.name.value==""){
         alert("Please fill all the details!")
-    }else{
+    }else if(
+        LSdata.forEach(el => {
+            if(el.email==form.email.value){    
+            stat=false;
+            alert("A User with the this username already exists please use a different username!")
+            }
+        })
+    ){
+    }else if(stat){
             let newObj={
             name:form.name.value,
             email:form.email.value,
